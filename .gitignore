@@ -1,0 +1,12 @@
+.idea/
+spring-cloud-consumer/spring-cloud-consumer.iml
+spring-cloud-parent/spring-cloud-parent.iml
+spring-cloud-producer/spring-cloud-producer.iml
+/.idea
+/spring-cloud-parent/spring-cloud-parent.iml
+/spring-cloud-consumer/target
+/spring-cloud-producer/target
+
+/*/*.iml
+/*/target
+
