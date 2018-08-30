@@ -6,6 +6,7 @@
     <groupId>spring.cloud.parent</groupId>
     <artifactId>spring-cloud-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud-version>Finchley.SR1</spring-cloud-version>
@@ -16,8 +17,8 @@
         <version>2.0.1.RELEASE</version>
     </parent>
     <modules>
-        <module>../spring-cloud-consumer</module>
-        <module>../spring-cloud-producer</module>
+        <module>../spring-cloud-eureka/spring-cloud-eureka-consumer</module>
+        <module>../spring-cloud-eureka/spring-cloud-eureka-producer</module>
     </modules>
     <build>
         <plugins>
