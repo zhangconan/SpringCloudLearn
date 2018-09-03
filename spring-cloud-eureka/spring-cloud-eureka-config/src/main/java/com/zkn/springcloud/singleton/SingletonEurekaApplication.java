@@ -1,19 +1,19 @@
-package com.zkn.springcloud.fir;
+package com.zkn.springcloud.singleton;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author zkn
  * @date 2018/8/16 23:13
  **/
-@EnableDiscoveryClient
+@EnableEurekaServer
 @SpringBootApplication
-public class SpringCloudServerApp {
+public class SingletonEurekaApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(SpringCloudServerApp.class);
+        SpringApplication.run(SingletonEurekaApplication.class);
     }
 }

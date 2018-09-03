@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("fir")
-public class HelloWorld {
+public class FirProducerHelloController {
 
     /**
      * 第一个请求
@@ -19,6 +19,6 @@ public class HelloWorld {
      */
     @RequestMapping("hello")
     public String index(String name) {
-        return "hello" + name + ",this is first message";
+        return "hello:" + name + ",this is first message";
     }
 }

@@ -20,8 +20,19 @@
     <modules>
         <module>../spring-cloud-eureka/spring-cloud-eureka-consumer</module>
         <module>../spring-cloud-eureka/spring-cloud-eureka-producer</module>
-        <module>../spring-cloud-eureka/spring-cloud-eureka-consumer</module>
+        <module>../spring-cloud-eureka/spring-cloud-eureka-config</module>
     </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <plugins>
             <plugin>
