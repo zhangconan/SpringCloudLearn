@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>spring.cloud.producer</groupId>
-    <artifactId>spring-cloud-producer</artifactId>
+    <groupId>spring.cloud.eureka.producer</groupId>
+    <artifactId>spring-cloud-eureka-producer</artifactId>
     <parent>
         <groupId>spring.cloud.parent</groupId>
         <artifactId>spring-cloud-parent</artifactId>
@@ -24,17 +24,8 @@
     </dependencyManagement>
     <dependencies>
         <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>20.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
