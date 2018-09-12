@@ -1,6 +1,8 @@
+---
 spring:
   application:
     name: spring-cloud-eureka-producer
+  profiles: singleton
 
 server:
   port: 8001

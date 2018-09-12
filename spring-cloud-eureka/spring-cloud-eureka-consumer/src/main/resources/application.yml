@@ -1,6 +1,8 @@
+---
 spring:
   application:
     name: spring-cloud-eureka-consumer
+  profiles: singleton
 
 server:
   port: 8002
