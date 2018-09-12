@@ -1,6 +1,8 @@
+---
 spring:
   application:
     name: spring-cloud-eureka-config
+  profiles: singleton
 
 server:
   port: 8003
@@ -14,3 +16,40 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
+
+## 分割必须是 三个  ---
+---
+spring:
+  application:
+    name: spring-cloud-eureka-multis-config
+  profiles: multis-1
+
+server:
+  port: 8010
+
+eureka:
+  instance:
+    hostname: localhost.multis.fir
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost.multis.sec:8011/eureka/
+
+---
+spring:
+  application:
+    name: spring-cloud-eureka-multis-config
+  profiles: multis-2
+
+server:
+  port: 8011
+
+eureka:
+  instance:
+    hostname: localhost.multis.sec
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost.multis.fir:8010/eureka/
