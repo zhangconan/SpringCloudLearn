@@ -21,6 +21,7 @@
         <module>../spring-cloud-eureka/spring-cloud-eureka-consumer</module>
         <module>../spring-cloud-eureka/spring-cloud-eureka-producer</module>
         <module>../spring-cloud-eureka/spring-cloud-eureka-config</module>
+        <module>../spring-cloud-hystrix/spring-cloud-hystrix-fir</module>
     </modules>
     <dependencyManagement>
         <dependencies>
